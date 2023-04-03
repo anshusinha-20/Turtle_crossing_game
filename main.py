@@ -58,5 +58,12 @@ while isGameOn:
         """speed is increased"""
         speed *= 0.9
 
+    """detect if player collides up with any of the car"""
+    for i in car.allCars:
+        if i.distance(player) < 20:
+            score.gameOver()
+            isGameOn = False
+
+
 """screen will exit on click"""
 screen.exitonclick()

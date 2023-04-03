@@ -21,3 +21,8 @@ class Scoreboard(Turtle):
         self.level += 1
         self.write(f"Level: {self.level}", align=ALIGNMENT, font=FONT)
 
+    def gameOver(self):
+        self.goto(0, 0)
+        self.write("Game Over!", align=ALIGNMENT, font=FONT)
+
+
