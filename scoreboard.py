@@ -1,7 +1,7 @@
 """imported Turtle class from the turtle module"""
 from turtle import Turtle
 
-"""constants"""
+"""font constants"""
 ALIGNMENT = "center"
 FONT = ("Courier", 20, "bold")
 

@@ -19,6 +19,7 @@ screen.setup(width=600, height=600)
 screen.title("Turtle crossing game")
 screen.bgcolor("white")
 screen.tracer(0)
+screen.listen()
 
 """created player object"""
 player = Player()
@@ -28,6 +29,9 @@ score = Scoreboard()
 
 """created car object"""
 car = Car()
+
+"""turtle moves forward on up key press"""
+screen.onkey(player.move, "Up")
 
 """variable to hold the game's running condition"""
 isGameOn = True

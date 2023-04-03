@@ -5,8 +5,8 @@ from turtle import Turtle
 """imported random module"""
 import random
 
-"""car forward distance"""
-FORWARD_DISTANCE = 20
+"""car's forward distance"""
+CAR_FORWARD_DISTANCE = 20
 
 """car positions"""
 CAR_POSITIONS = []
@@ -42,4 +42,4 @@ class Car:
 
     def move(self):
         for car in self.allCars:
-            car.forward(FORWARD_DISTANCE)
+            car.forward(CAR_FORWARD_DISTANCE)

@@ -1,6 +1,9 @@
 """imported Turtle class from the turtle module"""
 from turtle import Turtle
 
+"""player's forward distance"""
+PLAYER_FORWARD_DISTANCE = 20
+
 """created player class"""
 class Player(Turtle):
 
@@ -10,3 +13,6 @@ class Player(Turtle):
         self.penup()
         self.goto(0, -280)
         self.setheading(90)
+
+    def move(self):
+        self.forward(PLAYER_FORWARD_DISTANCE)
