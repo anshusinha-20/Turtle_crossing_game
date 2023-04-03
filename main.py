@@ -41,8 +41,8 @@ speed = 0.5
 
 """until the game is on, the loop will run"""
 while isGameOn:
-    screen.update()
     time.sleep(speed)
+    screen.update()
 
     """car is created"""
     car.createCar()
