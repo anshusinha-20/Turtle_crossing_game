@@ -37,6 +37,8 @@ while isGameOn:
     screen.update()
     time.sleep(0.5)
 
+    """car is created"""
+    car.createCar()
     """car moves forward"""
     car.move()
 
