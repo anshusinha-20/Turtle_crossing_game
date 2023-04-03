@@ -7,8 +7,11 @@ import time
 """imported Player class from the player module"""
 from player import Player
 
-"""imported Scoreboard class form the scoreboard module"""
+"""imported Scoreboard class from the scoreboard module"""
 from scoreboard import Scoreboard
+
+"""imported Car class from the cars module"""
+from cars import Car
 
 """created screen object"""
 screen = Screen()
@@ -23,13 +26,19 @@ player = Player()
 """created score object"""
 score = Scoreboard()
 
+"""created car object"""
+car = Car()
+
 """variable to hold the game's running condition"""
 isGameOn = True
 
 """until the game is on, the loop will run"""
 while isGameOn:
     screen.update()
-    time.sleep(0.08)
+    time.sleep(0.5)
+
+    """car moves forward"""
+    car.move()
 
 """screen will exit on click"""
 screen.exitonclick()
