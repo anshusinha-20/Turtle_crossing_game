@@ -11,8 +11,11 @@ class Player(Turtle):
         super().__init__()
         self.shape("turtle")
         self.penup()
-        self.goto(0, -280)
+        self.startAgain()
         self.setheading(90)
+
+    def startAgain(self):
+        self.goto(0, -260)
 
     def move(self):
         self.forward(PLAYER_FORWARD_DISTANCE)

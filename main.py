@@ -36,15 +36,27 @@ screen.onkey(player.move, "Up")
 """variable to hold the game's running condition"""
 isGameOn = True
 
+"""variable to increase the game's speed"""
+speed = 0.5
+
 """until the game is on, the loop will run"""
 while isGameOn:
     screen.update()
-    time.sleep(0.5)
+    time.sleep(speed)
 
     """car is created"""
     car.createCar()
     """car moves forward"""
     car.move()
+
+    """detect if player has reached the end line"""
+    if player.ycor() > 260:
+        """player reaches the starting line"""
+        player.startAgain()
+        """level is increased"""
+        score.updateScoreboard()
+        """speed is increased"""
+        speed *= 0.9
 
 """screen will exit on click"""
 screen.exitonclick()
