@@ -7,6 +7,9 @@ import time
 """imported Player class from the player module"""
 from player import Player
 
+"""imported Scoreboard class form the scoreboard module"""
+from scoreboard import Scoreboard
+
 """created screen object"""
 screen = Screen()
 screen.setup(width=600, height=600)
@@ -16,6 +19,9 @@ screen.tracer(0)
 
 """created player object"""
 player = Player()
+
+"""created score object"""
+score = Scoreboard()
 
 """variable to hold the game's running condition"""
 isGameOn = True
